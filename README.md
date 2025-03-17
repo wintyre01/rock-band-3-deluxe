@@ -1,3 +1,5 @@
+Original project by MiloHax. These are my personal modifications to the game.
+
 <div align="center">
 
 <img src="dependencies/media/header.gif" width="100%" alt="Header GIF">
