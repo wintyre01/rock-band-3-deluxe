@@ -10,7 +10,7 @@
    (guitar midiinstruments/guitar.milo)
 )
 (crowd_reactions TRUE)
-(slider -96 -85 -76.5 -68 -59.5 -51 -42.5 -34 -25.5 -17 -8.5 0)
+(slider -96 -15 -13.5 -12 -10.5 -9 -7.5 -6 -4.5 -3 -1.5 0)
 (slider_voicechat -96 -14 -12 -10 -8 -6 -4 -2 0 2 4 6)
 (ratio_sliders
    #ifdef HX_PC

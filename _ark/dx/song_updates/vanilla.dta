@@ -3334,7 +3334,7 @@
 (inbloom
    (song_id 22)
    (preview 30675 60675)
-   (song_length 260672)
+   (song_length 260673)
    (solo (guitar))
    (format 10)
    (version 1)
@@ -4171,7 +4171,7 @@
 (maps
    (song_id 26)
    (preview 39625 69625)
-   (song_length 201695)
+   (song_length 201696)
    (solo (vocal_percussion))
    (format 10)
    (version 1)
