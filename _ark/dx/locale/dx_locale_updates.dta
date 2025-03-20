@@ -191,7 +191,7 @@
 (small_club_06
    "De Magische Tuin")
 (small_club_10
-   "Stockholm Syndrome")
+   "Stockholm Synthdrome")
 (small_club_11
    "Alice's Free Love Cafe")
 (small_club_13
@@ -199,7 +199,7 @@
 (small_club_14
    "Sweaty's BBQ")
 (small_club_15
-   "18 W. 7th St.")
+   "504 Cypress")
 (tour_city_arcade
    "The Quarter Hole")
 (tour_city_bigclub
@@ -1818,6 +1818,162 @@
 (acc_dlc_harddrivefiller_desc
    "You would have filled an average-sized SD card with songs by now! After playing them all, contact @deliciousbees on Twitter for a thank you prize!")
 #endif
+(acc_dx_warmup_band
+   "It's Exposure Bro")
+(acc_dx_warmup_band_desc
+   "Earn 5 <alt>*</alt> on all Warmup songs")
+(acc_dx_apprentice_band
+   "Yeah Sure I'll Buy Your Merch")
+(acc_dx_apprentice_band_desc
+   "Earn 5 <alt>*</alt> on all Apprentice songs")
+(acc_dx_solid_band
+   "Dude Y'all Kick Serious Ass")
+(acc_dx_solid_band_desc
+   "Earn 5 <alt>*</alt> on all Solid songs")
+(acc_dx_moderate_band
+   "We're Going On Tour Babyyyyyyyyyyyyyyy")
+(acc_dx_moderate_band_desc
+   "Earn 5 <alt>*</alt> on all Moderate songs")
+(acc_dx_challenging_band
+   "Going Worldwide")
+(acc_dx_challenging_band_desc
+   "Earn 5 <alt>*</alt> on all Challenging songs")
+(acc_dx_nightmare_band
+   "Striving To Be The 2nd Band To Play Antarctica")
+(acc_dx_nightmare_band_desc
+   "Earn 5 <alt>*</alt> on all Nightmare songs")
+(acc_dx_impossible_band
+   "Stage Igniters")
+(acc_dx_impossible_band_desc
+   "Earn 5 <alt>*</alt> on all Impossible songs")
+(acc_dx_warmup_guitar
+   "This Hurts My Fingers")
+(acc_dx_warmup_guitar_desc
+   "Earn 5 <alt>*</alt> on all Warmup Guitar songs")
+(acc_dx_apprentice_guitar
+   "I Can Finally Play Smoke On The Water")
+(acc_dx_apprentice_guitar_desc
+   "Earn 5 <alt>*</alt> on all Apprentice Guitar songs")
+(acc_dx_solid_guitar
+   "My Hands Don't Hurt Playing Barre Chords Anymore")
+(acc_dx_solid_guitar_desc
+   "Earn 5 <alt>*</alt> on all Solid Guitar songs")
+(acc_dx_moderate_guitar
+   "Trying To Rock Out...And Succeeding At It")
+(acc_dx_moderate_guitar_desc
+   "Earn 5 <alt>*</alt> on all Moderate Guitar songs")
+(acc_dx_challenging_guitar
+   "Stealing All The Babes From The Drummer")
+(acc_dx_challenging_guitar_desc
+   "Earn 5 <alt>*</alt> on all Challenging Guitar songs")
+(acc_dx_nightmare_guitar
+   "Eddie Van Halen Ain't Got Nothin' On Me")
+(acc_dx_nightmare_guitar_desc
+   "Earn 5 <alt>*</alt> on all Nightmare Guitar songs")
+(acc_dx_impossible_guitar
+   "Lord of the Strings")
+(acc_dx_impossible_guitar_desc
+   "Earn 5 <alt>*</alt> on all Impossible Guitar songs")
+(acc_dx_warmup_drums
+   "Boots And Cats And Boots And Cats And...")
+(acc_dx_warmup_drums_desc
+   "Earn 5 <alt>*</alt> on all Warmup Drums songs")
+(acc_dx_apprentice_drums
+   "I've Stopped Adding Extra Beats When Hitting A Crash")
+(acc_dx_apprentice_drums_desc
+   "Earn 5 <alt>*</alt> on all Apprentice Drums songs")
+(acc_dx_solid_drums
+   "Rudiments 4 Dayz")
+(acc_dx_solid_drums_desc
+   "Earn 5 <alt>*</alt> on all Solid Drums songs")
+(acc_dx_moderate_drums
+   "Pounding 'Em Like The Drums")
+(acc_dx_moderate_drums_desc
+   "Earn 5 <alt>*</alt> on all Moderate Drums songs")
+(acc_dx_challenging_drums
+   "Call Me Ben 10 Because I Play Like I Got Four Arms")
+(acc_dx_challenging_drums_desc
+   "Earn 5 <alt>*</alt> on all Challenging Drums songs")
+(acc_dx_nightmare_drums
+   "Travis Barker's Too Busy With Kourtney Kardashian So...")
+(acc_dx_nightmare_drums_desc
+   "Earn 5 <alt>*</alt> on all Nightmare Drums songs")
+(acc_dx_impossible_drums
+   "AN-I-MAL!!!")
+(acc_dx_impossible_drums_desc
+   "Earn 5 <alt>*</alt> on all Impossible Drums songs")
+(acc_dx_warmup_vox
+   "Never Gonna Hit Those Notes")
+(acc_dx_warmup_vox_desc
+   "Earn 5 <alt>*</alt> on all Warmup Vocals songs")
+(acc_dx_apprentice_vox
+   "Not Nearly As Tone-Deaf Anymore")
+(acc_dx_apprentice_vox_desc
+   "Earn 5 <alt>*</alt> on all Apprentice Vocals songs")
+(acc_dx_solid_vox
+   "Mommy Made Me Mash My Nutter Butter Chocolate Peanut Butter Covered M&Ms")
+(acc_dx_solid_vox_desc
+   "Earn 5 <alt>*</alt> on all Solid Vocals songs")
+(acc_dx_moderate_vox
+   "Voice Of An Angel")
+(acc_dx_moderate_vox_desc
+   "Earn 5 <alt>*</alt> on all Moderate Vocals songs")
+(acc_dx_challenging_vox
+   "Solfège Is Too Easy I Need A Real Challenge")
+(acc_dx_challenging_vox_desc
+   "Earn 5 <alt>*</alt> on all Challenging Vocals songs")
+(acc_dx_nightmare_vox
+   "Axl Rose I'm Comin' For Ya")
+(acc_dx_nightmare_vox_desc
+   "Earn 5 <alt>*</alt> on all Nightmare Vocals songs")
+(acc_dx_impossible_vox
+   "Virtuoso")
+(acc_dx_impossible_vox_desc
+   "Earn 5 <alt>*</alt> on all Impossible Vocals songs")
+(acc_dx_warmup_bass
+   "Harmonix Hates Bass So Much I Had To DIY This Acc Art")
+(acc_dx_warmup_bass_desc
+   "Earn 5 <alt>*</alt> on all Warmup Bass songs")
+(acc_dx_apprentice_bass
+   "E E E E E E E E E E E E E E E E")
+(acc_dx_apprentice_bass_desc
+   "Earn 5 <alt>*</alt> on all Apprentice Bass songs")
+(acc_dx_solid_bass
+   "Hey Someone Noticed Me For Once")
+(acc_dx_solid_bass_desc
+   "Earn 5 <alt>*</alt> on all Solid Bass songs")
+(acc_dx_moderate_bass
+   "Finally People With Taste")
+(acc_dx_moderate_bass_desc
+   "Earn 5 <alt>*</alt> on all Moderate Bass songs")
+(acc_dx_challenging_bass
+   "Overshadowing The Guitar Player")
+(acc_dx_challenging_bass_desc
+   "Earn 5 <alt>*</alt> on all Challenging Bass songs")
+(acc_dx_nightmare_bass
+   "Flea's Hands Must Hurt After Slappin'...Not Mine")
+(acc_dx_nightmare_bass_desc
+   "Earn 5 <alt>*</alt> on all Nightmare Bass songs")
+(acc_dx_impossible_bass
+   "Groove Assassin")
+(acc_dx_impossible_bass_desc
+   "Earn 5 <alt>*</alt> on all Impossible Bass songs")
+(acc_dx_mcu
+   "Excelsior!")
+(acc_dx_mcu_desc
+   "Earn 5 <alt>*</alt> on all the songs featured in the MCU so far")
+(acc_dx_shrek
+   "Shrek Is Love. Shrek Is Life.")
+(acc_dx_shrek_desc
+   "Earn 5 <alt>*</alt> on all the songs featured in Shrek")
+(acc_dx_sonic
+   "Gotta Go Fast!")
+(acc_dx_sonic_desc
+   "Earn 5 <alt>*</alt> on all the songs featured in the Sonic Movie Universe so far")
+(acc_dx_transformers
+   "Transform and Roll Out!")
+(acc_dx_transformers_desc
+   "Earn 5 <alt>*</alt> on all the songs featured in the Transformers movies")
 (acc_dx_coverband
    "Cover Band")
 (acc_dx_coverband_desc
@@ -1998,11 +2154,11 @@
 (acc_dx_xbox
    "Xbox Supremacy")
 (acc_dx_xbox_desc
-   "Earn 5 <alt>*</alt> the 360-exclusive Guitar Hero II songs.")
+   "Earn 5 <alt>*</alt> on the 360-exclusive Guitar Hero II songs.")
 (acc_dx_kingofmetal
    "King of Metal")
 (acc_dx_kingofmetal_desc
-   "Earn 5 <alt>*</alt> these classic Metal Songs on Expert Guitar.")
+   "Earn 5 <alt>*</alt> on these classic Metal Songs on Expert Guitar.")
 (acc_dx_tweezer
    "Uncle Ebenezer")
 (acc_dx_tweezer_desc
@@ -2040,20 +2196,20 @@
 (acc_dx_treacherywilldiepro
    "Legs Of Steel")
 (acc_dx_treacherywilldiepro_desc
-   "Earn 5 <alt>*</alt> on \qYour Treachery Will Die with You\q with 2x Bass Pedal on Expert.")
+   "Earn 5 <alt>*</alt> on \qYour Treachery Will Die with You\q on Expert Pro Drums.")
 (acc_dx_slipknotpro
    "I'm Really Joey Jordison. Number 1.")
 (acc_dx_slipknotpro_desc
-   "Earn 5 <alt>*</alt> stars on every Slipknot songs with Pro Drums.")
+   "Earn 5 <alt>*</alt> stars on every Joey-era Slipknot song on Pro Drums.")
 ;Custom Drum Goals
 (acc_dx_treacherywilldie
    "Your Treachery Must Die with You")
 (acc_dx_treacherywilldie_desc
-   "Get 5 <alt>*</alt> on \qYour Treachery Will Die with You\q on Expert.")
+   "Get 5 <alt>*</alt> on \qYour Treachery Will Die with You\q on Expert Drums.")
 (acc_dx_slipknot
    "I'm Joey Jordison. Number 1.")
 (acc_dx_slipknot_desc
-   "Earn 5 <alt>*</alt> stars on every Slipknot songs with Drums.")
+   "Earn 5 <alt>*</alt> stars on every Joey-era Slipknot song on Drums.")
 ;Custom Pro Key Goals
 (acc_dx_brainpowerprokey
    "Super Sprøde")
@@ -2098,9 +2254,9 @@
    "Rock Band Track Pack Volume 1")
 (acc_dx_trackpack1_desc
    "Earn at least 2 <alt>*</alt> on all 20 songs in the Rock Band Track Pack Volume 1.")
-(acc_dx_CTP2
+(acc_dx_cunt
    "Rock Band Country Track Pack Volume 2")
-(acc_dx_CTP2_desc
+(acc_dx_cunt_desc
    "Earn at least 2 <alt>*</alt> on all 21 songs in the Rock Band Country Track Pack Volume 2.")
 ; RB3 practice sections
 (a "A section")
@@ -6316,6 +6472,12 @@
 (prc_vocal_solo_b "Vocal solo b")
 (prc_vocal_solo_c "Vocal solo c")
 (prc_vocal_solo_d "Vocal solo d")
+(prc_gtr_mel_1 "Gtr melody 1")
+(prc_gtr_mel_2 "Gtr melody 2")
+(prc_wambam "Wam-bam")
+(prc_foreplay_intro "Foreplay intro")
+(prc_very_spacey "Very spacey")
+(prc_longtime_intro "Long time intro")
 (you_lost "You lost the game")
 #ifdef RB3E ;rb3enhanced specific modifiers
 (mod_black_background_desc "Disables the in-game venue")
@@ -6457,6 +6619,7 @@
 (dx_setlist_infinite_desc "You've played the endless setlists, now play all 3 back to back in this absolute gauntlet of a set.")
 (setlist_rb1endless_desc "You can now play The Endless Setlist. Our prayers are with you.")
 (setlist_rb2endless_desc "Are you getting tired of how exceedingly awesome you are? Looking for a REAL challenge? How about ALL THE SONGS IN THE FREAKING GAME IN A ROW WITH NO BREAKS? Try the Endless Setlist II today, but don't forget to take a nap and hit the bathroom first!!!")
+(setlist_doolittle_desc "The critically acclaimed Doolittle album by Pixies played in track order.")
 ;Splash Text
 (dx_splash_1
    "milohax bad!")

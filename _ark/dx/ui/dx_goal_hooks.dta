@@ -1,6 +1,139 @@
 ;custom goal catagories can be found in "dx/macros/dx_conf_macros.dta", offical can be found in "config/accomplishment_categories.dta" 
 
 ;;;;;;;;;;;;;;;;BAND GOALS;;;;;;;;;;;;;;;;;;
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Warmup
+   (acc_dx_warmup_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 48)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier1)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Apprentice
+   (acc_dx_apprentice_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 293)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier2)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Solid
+   (acc_dx_solid_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 880)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier3)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Moderate
+   (acc_dx_moderate_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 1462 #else 1461 #endif)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier4)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Challenging
+   (acc_dx_challenging_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 848 #else 847 #endif)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier6)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Nightmare
+   (acc_dx_nightmare_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 418)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier8)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Impossible
+   (acc_dx_impossible_band
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (launchable_playercount_min 2)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 232)
+      (conditions
+         (stars
+	    5
+	    (instrument kScoreBand)))
+   (part_difficulty_sym band)
+   (oneshot_playermin 2)
+   (filter
+      (kFilterDifficulty generic_tier9)))
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; beginning songs
    (acc_dx_beginning
       (category acc_cat_band_dx)
@@ -62,11 +195,11 @@
       (units_token unit_songs_plural)
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
-         (num_songs #ifdef HX_XBOX 28 #else 26 #endif)
-         (songs action ballroomblitz bangagong beetlebum brassinpocket cherrybomb everfalleninlove fortunateson greengrass hardtohandle heroes jukeboxhero lasttraintoclarksville limelight missqueen mysharona nib numberofthebeast #ifdef HX_XBOX paranoid #endif queenbitch #ifdef HX_XBOX runtothehills #endif songwithamission sweetleaf tenspeed tomsawyer trainkeptarollin warpigs workingman))
+         (num_songs 28)
+         (songs action ballroomblitz bangagong beetlebum brassinpocket cherrybomb everfalleninlove fortunateson greengrass hardtohandle heroes jukeboxhero lasttraintoclarksville limelight missqueen mysharona nib numberofthebeast paranoid queenbitch runtothehills songwithamission sweetleaf tenspeed tomsawyer trainkeptarollin warpigs workingman))
       (conditions
          (stars 2))
-      (songs action ballroomblitz bangagong beetlebum brassinpocket cherrybomb everfalleninlove fortunateson greengrass hardtohandle heroes jukeboxhero lasttraintoclarksville limelight missqueen mysharona nib numberofthebeast #ifdef HX_XBOX paranoid #endif queenbitch #ifdef HX_XBOX runtothehills #endif songwithamission sweetleaf tenspeed tomsawyer trainkeptarollin warpigs workingman)
+      (songs action ballroomblitz bangagong beetlebum brassinpocket cherrybomb everfalleninlove fortunateson greengrass hardtohandle heroes jukeboxhero lasttraintoclarksville limelight missqueen mysharona nib numberofthebeast paranoid queenbitch runtothehills songwithamission sweetleaf tenspeed tomsawyer trainkeptarollin warpigs workingman)
    )
 }
 
@@ -153,6 +286,57 @@
    )
 }
 
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; MCU
+   (acc_dx_mcu
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongListConditional)
+      (metascore_value career_fans_medium)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (dynamic_prereqs
+         (num_songs 34)
+         (songs backinblack_live shoottothrill_live shouldistay anotheronebitesthedust highwaytohell_live thunderstruck_live walkfoo UGC_5005633 spiritinthesky moonagedaydream iwantyouback cherrybomb shiningstar surrender blitzkriegbop comeasyouarelive justagirl manonthemoon celebrityskin iwannabesedated voodoochildlive americanpie smellsliketeen feelslikethefirsttime peoplearestrange justwhatineeded livinonaprayer rainbowinthedark creep inthemeantime wecarealot nosleeptillbrooklyn dogdaysareover))
+      (conditions
+         (stars
+            5)) 
+      (songs backinblack_live shoottothrill_live shouldistay anotheronebitesthedust highwaytohell_live thunderstruck_live walkfoo UGC_5005633 spiritinthesky moonagedaydream iwantyouback cherrybomb shiningstar surrender blitzkriegbop comeasyouarelive justagirl manonthemoon celebrityskin iwannabesedated voodoochildlive americanpie smellsliketeen feelslikethefirsttime peoplearestrange justwhatineeded livinonaprayer rainbowinthedark creep inthemeantime wecarealot nosleeptillbrooklyn dogdaysareover)
+   )
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Shrek
+   (acc_dx_shrek
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongListConditional)
+      (metascore_value career_fans_medium)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (dynamic_prereqs
+         (num_songs 12)
+         (songs allstar badreputation doyoureallywanttohurtme stayinalive accidentallyinlove everfalleninlove hungrylikethewolf jokerandthe barracuda dontstopbelieving onelove tubthumping))
+      (conditions
+         (stars
+            5)) 
+      (songs allstar badreputation doyoureallywanttohurtme stayinalive accidentallyinlove everfalleninlove hungrylikethewolf jokerandthe barracuda dontstopbelieving onelove tubthumping)
+   )
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Sonic
+   (acc_dx_sonic
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongListConditional)
+      (metascore_value career_fans_medium)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (dynamic_prereqs
+         (num_songs 9)
+         (songs blitzkriegbop dontstopmenow uptownfunk barracuda walk thewarrior allthesmallthings saturdaynightsalright pickupthepieces))
+      (conditions
+         (stars
+            5)) 
+      (songs blitzkriegbop dontstopmenow uptownfunk barracuda walk thewarrior allthesmallthings saturdaynightsalright pickupthepieces)
+   )
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; spongebob
    (acc_dx_spongebob
       (category acc_cat_band_dx)
@@ -184,6 +368,23 @@
          (stars
             5)) 
       (songs timmy pokerfacecartman)
+   )
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; transformers
+   (acc_dx_transformers
+      (category acc_cat_band_dx)
+      (accomplishment_type kAccomplishmentTypeSongListConditional)
+      (metascore_value career_fans_medium)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (dynamic_prereqs
+         (num_songs 13)
+         (songs whativedone2 whatsitfeellike ifeelgoodalt newdivide 21guns burnittotheground realworld thisisit almosteasy sweetemotion runaway takeonme everybodywantstorule))
+      (conditions
+         (stars
+            5)) 
+      (songs whativedone2 whatsitfeellike ifeelgoodalt newdivide 21guns burnittotheground realworld thisisit almosteasy sweetemotion runaway takeonme everybodywantstorule)
    )
 }
 
@@ -238,7 +439,7 @@
    )
 }
 
-{push_back {find $syscfg campaign accomplishment_info accomplishments} ; De-Luxe
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; You Lost...
    (acc_dx_thegame
       (category acc_cat_band_dx)
       (accomplishment_type kAccomplishmentTypeSongListConditional)
@@ -366,11 +567,11 @@
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
          (num_songs 8)
-         (songs roundabout bringmetolife UGC_5001770 nevergonnagiveyouup takeonme allstar thesoundofsilence callmemaybe))
+         (songs roundabout bringmetolife UGC_5001770 nevergonnagiveyouup takeonme allstar soundsofsilence callmemaybe))
       (conditions
          (stars
             5)) 
-      (songs roundabout bringmetolife UGC_5001770 nevergonnagiveyouup takeonme allstar thesoundofsilence callmemaybe)
+      (songs roundabout bringmetolife UGC_5001770 nevergonnagiveyouup takeonme allstar soundsofsilence callmemaybe)
    )
 }
 
@@ -495,13 +696,13 @@
       (units_token unit_songs_plural)
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
-         (num_songs 3)
-         (songs warpigs sweetleaf nib))
+         (num_songs 4)
+         (songs paranoid warpigs sweetleaf nib))
       (conditions
          (stars
             5
             (difficulty kDifficultyExpert))) 
-      (songs warpigs sweetleaf nib)
+      (songs paranoid warpigs sweetleaf nib)
    )
 }
 
@@ -532,11 +733,11 @@
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
          (num_songs 21)
-         (songs numberofthebeast runtothehills wastedyears thetrooper theclairvoyant powerslave ironmaidenlive hallowedbethyname fearofthedarklive caniplaywithmadness aceshigh_live 2minutestomidnight thewickerman theprisoner seventhson rimeoftheancientmariner phantomoftheopera infinitedreams flightoficarus numberofthebeast2 runtothehills2))
+         (songs runtothehills numberofthebeast wastedyears thetrooper theclairvoyant powerslave ironmaidenlive hallowedbethyname fearofthedarklive caniplaywithmadness aceshigh_live 2minutestomidnight thewickerman theprisoner seventhson rimeoftheancientmariner phantomoftheopera infinitedreams flightoficarus numberofthebeast2 runtothehills2))
       (conditions
          (stars
             5)) 
-      (songs numberofthebeast runtothehills wastedyears thetrooper theclairvoyant powerslave ironmaidenlive hallowedbethyname fearofthedarklive caniplaywithmadness aceshigh_live 2minutestomidnight thewickerman theprisoner seventhson rimeoftheancientmariner phantomoftheopera infinitedreams flightoficarus numberofthebeast2 runtothehills2)
+      (songs runtothehills numberofthebeast wastedyears thetrooper theclairvoyant powerslave ironmaidenlive hallowedbethyname fearofthedarklive caniplaywithmadness aceshigh_live 2minutestomidnight thewickerman theprisoner seventhson rimeoftheancientmariner phantomoftheopera infinitedreams flightoficarus numberofthebeast2 runtothehills2)
    )
 }
 
@@ -701,6 +902,118 @@
 ;HMX SONGS IN RB
 
 ;;;;;;;;;;;;;;;;GUITAR GOALS;;;;;;;;;;;;;;;;;
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Warmup
+   (acc_dx_warmup_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 119)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier1)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Apprentice
+   (acc_dx_apprentice_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 390)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier2)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Solid
+   (acc_dx_solid_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 728)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier3)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Moderate
+   (acc_dx_moderate_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 1161)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier4)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Challenging
+   (acc_dx_challenging_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 769 #else 768 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier6)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Nightmare
+   (acc_dx_nightmare_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 521 #else 520 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier8)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Impossible
+   (acc_dx_impossible_guitar
+      (category acc_cat_guitar_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 461)
+      (conditions
+         (stars 5
+		 (instrument kScoreGuitar)))
+   (part_difficulty_sym guitar)
+   (filter
+      (kFilterDifficulty generic_tier9)))
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; The hook   Hourglass goal
    (acc_dx_hourglass                                                   ; Internal goal name, locale must be added in "dx/locale/dx_locale_updates.dta"
       (category acc_cat_guitar_dx)
@@ -728,14 +1041,14 @@
       (units_token unit_songs_plural)
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
-         (num_songs 3)
-         (songs billiondollarlive thetrooper possumkingdom))
+         (num_songs 4)
+         (songs billiondollarlive thetrooper possumkingdom rockandrollhoochiekoo))
       (conditions
          (stars
             5
             (instrument kScoreGuitar)
             (difficulty kDifficultyExpert))) 
-      (songs billiondollarlive thetrooper possumkingdom)
+      (songs billiondollarlive thetrooper possumkingdom rockandrollhoochiekoo)
    )
 }
 
@@ -913,6 +1226,118 @@
 ;GH SONGS IN RB
 
 ;;;;;;;;;;;;;;;;BASS GOALS;;;;;;;;;;;;;;;;;
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Warmup
+   (acc_dx_warmup_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 260)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier1)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Apprentice
+   (acc_dx_apprentice_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 727)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier2)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Solid
+   (acc_dx_solid_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 942)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier3)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Moderate
+   (acc_dx_moderate_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 1070 #else 1069 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier4)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Challenging
+   (acc_dx_challenging_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 649)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier6)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Nightmare
+   (acc_dx_nightmare_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 308 #else 307 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier8)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Impossible
+   (acc_dx_impossible_bass
+      (category acc_cat_bass_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 194)
+      (conditions
+         (stars 5
+		 (instrument kScoreBass)))
+   (part_difficulty_sym bass)
+   (filter
+      (kFilterDifficulty generic_tier9)))
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; carl
    (acc_dx_carl
       (category acc_cat_bass_dx)
@@ -981,18 +1406,18 @@
       (units_token unit_songs_plural)
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
-         (num_songs 1)
-         (songs sulpher psychosocial duality waitandbleed snuff pulseofthemaggots leftbehind))
+         (num_songs 8)
+         (songs sulpher psychosocial duality beforeiforget waitandbleed snuff pulseofthemaggots leftbehind))
       (conditions
          (stars
             5
             (difficulty kDifficultyExpert)
             (instrument kScoreRealDrum)))
-      (songs sulpher psychosocial duality waitandbleed snuff pulseofthemaggots leftbehind)
+      (songs sulpher psychosocial duality beforeiforget waitandbleed snuff pulseofthemaggots leftbehind)
    )
 }
 
-{push_back {find $syscfg campaign accomplishment_info accomplishments} ; yourr treachery will die with you pro 2x
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; your treachery will die with you pro
    (acc_dx_treacherywilldiepro
       (category acc_cat_prodrums_dx)
       (accomplishment_type kAccomplishmentTypeSongListConditional)
@@ -1011,6 +1436,118 @@
    )
 }
 ;;;;;;;;;;;;;;;;DRUM GOALS;;;;;;;;;;;;;;;;;
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Warmup
+   (acc_dx_warmup_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 185)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier1)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Apprentice
+   (acc_dx_apprentice_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 448 #else 447 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier2)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Solid
+   (acc_dx_solid_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 608)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier3)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Moderate
+   (acc_dx_moderate_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 963 #else 962 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier4)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Challenging
+   (acc_dx_challenging_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 838)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier6)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Nightmare
+   (acc_dx_nightmare_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 541)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier8)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Impossible
+   (acc_dx_impossible_drums
+      (category acc_cat_drums_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 563)
+      (conditions
+         (stars 5
+		 (instrument kScoreDrum)))
+   (part_difficulty_sym drum)
+   (filter
+      (kFilterDifficulty generic_tier9)))
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; slipknot drums
    (acc_dx_slipknot
       (category acc_cat_drums_dx)
@@ -1019,18 +1556,18 @@
       (units_token unit_songs_plural)
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
-         (num_songs 1)
-         (songs sulpher psychosocial duality waitandbleed snuff pulseofthemaggots leftbehind))
+         (num_songs 8)
+         (songs sulpher psychosocial duality beforeiforget waitandbleed snuff pulseofthemaggots leftbehind))
       (conditions
          (stars
             5
             (difficulty kDifficultyExpert)
             (instrument kScoreDrum)))
-      (songs sulpher psychosocial duality waitandbleed snuff pulseofthemaggots leftbehind)
+      (songs sulpher psychosocial duality beforeiforget waitandbleed snuff pulseofthemaggots leftbehind)
    )
 }
 
-{push_back {find $syscfg campaign accomplishment_info accomplishments} ; yourr treachery will die with you
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; your treachery will die with you
    (acc_dx_treacherywilldie
       (category acc_cat_drums_dx)
       (accomplishment_type kAccomplishmentTypeSongListConditional)
@@ -1039,13 +1576,13 @@
       (units_token_singular unit_songs_singular)
       (dynamic_prereqs
          (num_songs 1)
-         (songs UGC_5005420))
+         (songs UGC_5005455))
       (conditions
          (stars
             5
             (difficulty kDifficultyExpert)
             (instrument kScoreDrum)))
-      (songs UGC_5005420)
+      (songs UGC_5005455)
    )
 }
 ;;;;;;;;;;;;;;;;PRO KEY GOALS;;;;;;;;;;;;;;;;;
@@ -1068,6 +1605,118 @@
 }
 
 ;;;;;;;;;;;;;;;;VOCAL GOALS;;;;;;;;;;;;;;;;;
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Warmup
+   (acc_dx_warmup_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 413)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier1)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Apprentice
+   (acc_dx_apprentice_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 586)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier2)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Solid
+   (acc_dx_solid_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 948)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier3)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Moderate
+   (acc_dx_moderate_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs #ifdef HX_XBOX 1178 #else 1176 #endif)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier4)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Challenging
+   (acc_dx_challenging_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 552)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier6)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Nightmare
+   (acc_dx_nightmare_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 187)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier8)))
+}
+
+{push_back {find $syscfg campaign accomplishment_info accomplishments} ; Impossible
+   (acc_dx_impossible_vox
+      (category acc_cat_vox_dx)
+      (accomplishment_type kAccomplishmentTypeSongFilterConditional)
+      (metascore_value career_fans_impossible)
+      (units_token unit_songs_plural)
+      (units_token_singular unit_songs_singular)
+      (num_songs 119)
+      (conditions
+         (stars 5
+		 (instrument kScoreVocals)))
+   (part_difficulty_sym vocals)
+   (filter
+      (kFilterDifficulty generic_tier9)))
+}
+
 {push_back {find $syscfg campaign accomplishment_info accomplishments} ; gaybar
    (acc_dx_gaybar
       (category acc_cat_vox_dx)
@@ -1239,7 +1888,7 @@
 )
 #define DX_GOAL_RBCTP2
 ( ; Country track pack 2
-   (acc_dx_CTP2
+   (acc_dx_cunt
       (category acc_cat_band_trackpack)
       (accomplishment_type kAccomplishmentTypeSongListConditional)
       (metascore_value career_fans_expert)
