@@ -1,2 +1,8 @@
 ;put your own custom sources here
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(rb1b "Rock Band Bonus Songs")
+(rb1wii "Rock Band Wii")
+(rb1eu "Rock Band Europe")
+(rb1dlc "Rock Band DLC")
+(rb2dlc "Rock Band 2 DLC")
+(rb3dx "Rock Band 3 Deluxe")

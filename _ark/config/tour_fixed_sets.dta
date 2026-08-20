@@ -1,0 +1,139 @@
+(tour01_gig01
+ (group tour01_gig01)
+ (songs
+  iloverocknroll
+  lastdance))
+(tour01_gig02
+ (group tour01_gig02)
+ (songs
+  justlikeheaven
+  walkinonthesun))
+(tour02_gig01
+ (group tour02_gig01)
+ (songs
+  imagine
+  yoshimibattles))
+(tour02_gig03
+ (group tour02_gig03)
+ (songs
+  iwannabesedated
+  lowrider))
+(tour03_gig01
+ (group tour03_gig01)
+ (songs
+  spaceoddity
+  werewolvesoflondon))
+(tour03_gig03
+ (group tour03_gig03)
+ (songs
+  thehardestbutton
+  whipit))
+(tour04_gig01
+ (group tour04_gig01)
+ (songs
+  livinginamerica
+  outerspacemuffs))
+(tour04_gig03
+ (group tour04_gig03)
+ (songs
+  plush
+  rehab
+  stopmeifyouthink))
+(tour04_gig05
+ (group tour04_gig05)
+ (songs
+  sisterchristian
+  ineedtoknow
+  portionsforfoxes))
+(tour05_gig01
+ (group tour05_gig01)
+ (songs
+  midlifecrisis
+  getfree))
+(tour05_gig02
+ (group tour05_gig02)
+ (songs
+  heartofglass
+  thisbastardslife))
+(tour06_gig01
+ (group tour06_gig01)
+ (songs
+  chinagrove
+  smokeonthewater))
+(tour06_gig03
+ (group tour06_gig03)
+ (songs
+  killingloneliness
+  duhast))
+(tour07_gig01
+ (group tour07_gig01)
+ (songs
+  oyemiamor
+  coldasice))
+(tour07_gig03
+ (group tour07_gig03)
+ (songs
+  needyoutonight
+  somethingbigger
+  goodvibrationslive))
+(tour07_gig05
+ (group tour07_gig05)
+ (songs
+  antibodies
+  dontburyme
+  combatbaby))
+(tour08_gig01
+ (group tour08_gig01)
+ (songs
+  thecon
+  icanseeformiles))
+(tour08_gig03
+ (group tour08_gig03)
+ (songs
+  thelook
+  hereigoagain))
+(tour09_gig01
+ (group tour09_gig01)
+ (songs
+  centerfold
+  getupstandup))
+(tour09_gig03
+ (group tour09_gig03)
+ (songs
+  dontstandsoclosetome
+  heymanniceshot
+  inabigcountry))
+(tour09_gig05
+ (group tour09_gig05)
+ (songs
+  thebeautifulpeople
+  breakonthrough
+  everybodywantstorule))
+(tour10_gig01
+ (group tour10_gig01)
+ (songs
+  meenamora
+  20thcenturyboy))
+(tour10_gig03
+ (group tour10_gig03)
+ (songs
+  inthemeantime
+  flylikeaneagle
+  ohmygod))
+(tour10_gig05
+ (group tour10_gig05)
+ (songs
+  walkoflife
+  kinggeorge))
+(tour10_gig06
+ (group tour10_gig06)
+ (songs
+  rainbowinthedark
+  jerrywasaracecar
+  saturdaynightsalright))
+(tour10_gig07
+ (group tour10_gig07)
+ (songs
+  thekillingmoon
+  thepoweroflove
+  foolin))

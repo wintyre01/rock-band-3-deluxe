@@ -1,341 +1,341 @@
 ; Rock Band 1
-(brainpower
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3))
-            (bass (4 5))
-            (guitar (6 7))
-            (vocals (10 11)) ;lol harmonix has had this incorrect since release in rock band 4 up til we found on 07/28/2023
-            (keys (8 9))
-         )
-      )
-   )
-   (rank
-      (drum 300)
-      (guitar 340)
-      (bass 343)
-      (vocals 200)
-      (keys 1)
-      (real_keys 170)
-      (band 320)
-   )
-   (version 30)
-   (keys_author "TheSheepQueen")
-)
-(cantletgo
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4 5))
-            (bass (6 7))
-            (guitar (8 9))
-            (vocals (10 11))
-            (keys (12 13))
-         )
-      )
-   )
-   (rank
-      (drum 280)
-      (guitar 370)
-      (bass 242)
-      (vocals 450)
-      (keys 269)
-      (real_keys 269)
-      (band 330)
-   )
-   (version 29)
-   (keys_author "FujiSkunk")
-)
-(detroitrockcity
-   (song
-      (tracks
-         (
-            (drum (0 1 2))
-            (bass 3)
-            (guitar (4 5))
-            (vocals (6 7))
-            (keys (8 9))
-         )
-      )
-   )
-   (rank
-      (drum 380)
-      (guitar 220)
-      (bass 220)
-      (vocals 220)
-      (keys 170)
-      (real_keys 170)
-      (band 380)
-   )
-   (version 30)
-   (keys_author "TheSheepQueen")
-)
-(dontfearthereaper
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4 5))
-            (bass 6)
-            (guitar (7 8))
-            (vocals (9 10))
-            (keys (11 12))
-         )
-      )
-   )
-   (rank
-      (drum 400)
-      (guitar 300)
-      (bass 300)
-      (vocals 130)
-      (keys 211)
-      (real_keys 269)
-      (band 350)
-   )
-   (version 30)
-   (keys_author "TheSheepQueen")
-)
-(electricversion
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4))
-            (bass 5)
-            (guitar (6 7))
-            (vocals (8 9))
-            (keys (10 11))
-         )
-      )
-   )
-   (rank
-      (drum 330)
-      (guitar 240)
-      (bass 245)
-      (vocals 240)
-      (band 365)
-      (keys 327)
-      (real_keys 327)
-   )
-   (version 30)
-   (keys_author "Linos Melendi")
-)
-(epic
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4))
-            (bass 5)
-            (guitar (6 7))
-            (vocals (8 9))
-            (keys (10 11))
-         )
-      )
-   )
-   (rank
-      (drum 200)
-      (guitar 280)
-      (bass 280)
-      (vocals 140)
-      (keys 170)
-      (real_keys 211)
-      (band 265)
-   )
-   (version 30)
-   (solo (guitar vocal_percussion keys))
-   (keys_author "TheSheepQueen")
-)
-(foreplaylongtime
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4 5))
-            (bass 6)
-            (guitar (7 8))
-            (vocals (9 10))
-            (keys (11 12))
-         )
-      )
-   )
-   (rank
-      (drum 450)
-      (guitar 360)
-      (bass 360)
-      (vocals 305)
-      (band 450)
-      (keys 478)
-      (real_keys 479)
-   )
-   (version 30)
-   (keys_author "mazegeek")
-)
-(ithinkimparanoid
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4))
-            (bass 5)
-            (guitar (6 7))
-            (vocals (8 9))
-            (keys (10 11))
-         )
-      )
-   )
-   (rank
-      (drum 115)
-      (guitar 155)
-      (bass 155)
-      (vocals 120)
-      (keys 170)
-      (real_keys 170)
-      (band 115)
-   )
-   (version 30)
-   (keys_author "TheSheepQueen")
-)
-(suffragettecity
-   (song
-      (tracks
-         (
-            (drum (0 1 2))
-            (bass 3)
-            (guitar (4 5))
-            (vocals (6 7))
-            (keys (8 9))
-         )
-      )
-   )
-   (rank
-      (drum 180)
-      (guitar 260)
-      (bass 260)
-      (vocals 285)
-      (keys 269)
-      (real_keys 269)
-      (band 270)
-   )
-   (version 30)
-   (keys_author "TheSheepQueen")
-)
-(thehandthatfeeds
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3 4 5))
-            (bass (6 7))
-            (guitar (8 9))
-            (vocals (10 11))
-            (keys (12 13))
-         )
-      )
-   )
-   (rank
-      (drum 250)
-      (guitar 170)
-      (bass 170)
-      (vocals 180)
-      (keys 153)
-      (real_keys 153)
-      (band 260)
-   )
-   (version 30)
-   (keys_author "FujiSkunk")
-)
-(timewehad
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3))
-            (bass (4 5))
-            (guitar (6 7))
-            (vocals (8 9))
-            (keys (10 11))
-         )
-      )
-   )
-   (rank
-      (drum 220)
-      (guitar 120)
-      (bass 150)
-      (vocals 140)
-      (keys 153)
-      (real_keys 153)
-      (band 200)
-   )
-   (version 30)
-   (keys_author "FujiSkunk")
-)
-(welcomehome
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3))
-            (bass 4)
-            (guitar (5 6))
-            (vocals (7 8))
-            (keys (9 10))
-         )
-      )
-   )
-   (rank
-      (drum 310)
-      (guitar 380)
-      (bass 380)
-      (vocals 280)
-      (keys 211)
-      (real_keys 211)
-      (band 320)
-   )
-   (version 30)
-   (keys_author "Linos Melendi")
-)
-(whenyouwereyoung
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3))
-            (bass 4)
-            (guitar (5 6))
-            (vocals (7 8))
-            (keys (9 10))
-         )
-      )
-   )
-   (rank
-      (drum 335)
-      (guitar 230)
-      (bass 230)
-      (vocals 210)
-      (keys 211)
-      (real_keys 211)
-      (band 200)
-   )
-   (version 30)
-   (keys_author "Linos Melendi")
-)
-(wontgetfooled
-   (song
-      (tracks
-         (
-            (drum (0 1))
-            (bass 2)
-            (guitar (3 4))
-            (vocals (5 6))
-            (keys (7 8))
-         )
-      )
-   )
-   (rank
-      (drum 500)
-      (guitar 350)
-      (bass 350)
-      (vocals 275)
-      (keys 450)
-      (real_keys 450)
-      (band 500)
-   )
-   (version 30)
-   (keys_author "mazegeek")
-)
+;(brainpower
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3))
+;            (bass (4 5))
+;            (guitar (6 7))
+;            (vocals (10 11)) ;lol harmonix has had this incorrect since release in rock band 4 up til we found on 07/28/2023
+;            (keys (8 9))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 300)
+;      (guitar 340)
+;      (bass 343)
+;      (vocals 200)
+;      (keys 1)
+;      (real_keys 170)
+;      (band 320)
+;   )
+;   (version 30)
+;   (keys_author "TheSheepQueen")
+;)
+;(cantletgo
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4 5))
+;            (bass (6 7))
+;            (guitar (8 9))
+;            (vocals (10 11))
+;            (keys (12 13))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 280)
+;      (guitar 370)
+;      (bass 242)
+;      (vocals 450)
+;      (keys 269)
+;      (real_keys 269)
+;      (band 330)
+;   )
+;   (version 29)
+;   (keys_author "FujiSkunk")
+;)
+;(detroitrockcity
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2))
+;            (bass 3)
+;            (guitar (4 5))
+;            (vocals (6 7))
+;            (keys (8 9))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 380)
+;      (guitar 220)
+;      (bass 220)
+;      (vocals 220)
+;      (keys 170)
+;      (real_keys 170)
+;      (band 380)
+;   )
+;   (version 30)
+;   (keys_author "TheSheepQueen")
+;)
+;(dontfearthereaper
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4 5))
+;            (bass 6)
+;            (guitar (7 8))
+;            (vocals (9 10))
+;            (keys (11 12))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 400)
+;      (guitar 300)
+;      (bass 300)
+;      (vocals 130)
+;      (keys 211)
+;      (real_keys 269)
+;      (band 350)
+;   )
+;   (version 30)
+;   (keys_author "TheSheepQueen")
+;)
+;(electricversion
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4))
+;            (bass 5)
+;            (guitar (6 7))
+;            (vocals (8 9))
+;            (keys (10 11))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 330)
+;      (guitar 240)
+;      (bass 245)
+;      (vocals 240)
+;      (band 365)
+;      (keys 327)
+;      (real_keys 327)
+;   )
+;   (version 30)
+;   (keys_author "Linos Melendi")
+;)
+;(epic
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4))
+;            (bass 5)
+;            (guitar (6 7))
+;            (vocals (8 9))
+;            (keys (10 11))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 200)
+;      (guitar 280)
+;      (bass 280)
+;      (vocals 140)
+;      (keys 170)
+;      (real_keys 211)
+;      (band 265)
+;   )
+;   (version 30)
+;   (solo (guitar vocal_percussion keys))
+;   (keys_author "TheSheepQueen")
+;)
+;(foreplaylongtime
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4 5))
+;            (bass 6)
+;            (guitar (7 8))
+;            (vocals (9 10))
+;            (keys (11 12))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 450)
+;      (guitar 360)
+;      (bass 360)
+;      (vocals 305)
+;      (band 450)
+;      (keys 478)
+;      (real_keys 479)
+;   )
+;   (version 30)
+;   (keys_author "mazegeek")
+;)
+;(ithinkimparanoid
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4))
+;            (bass 5)
+;            (guitar (6 7))
+;            (vocals (8 9))
+;            (keys (10 11))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 115)
+;      (guitar 155)
+;      (bass 155)
+;      (vocals 120)
+;      (keys 170)
+;      (real_keys 170)
+;      (band 115)
+;   )
+;   (version 30)
+;   (keys_author "TheSheepQueen")
+;)
+;(suffragettecity
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2))
+;            (bass 3)
+;            (guitar (4 5))
+;            (vocals (6 7))
+;            (keys (8 9))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 180)
+;      (guitar 260)
+;      (bass 260)
+;      (vocals 285)
+;      (keys 269)
+;      (real_keys 269)
+;      (band 270)
+;   )
+;   (version 30)
+;   (keys_author "TheSheepQueen")
+;)
+;(thehandthatfeeds
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3 4 5))
+;            (bass (6 7))
+;            (guitar (8 9))
+;            (vocals (10 11))
+;            (keys (12 13))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 250)
+;      (guitar 170)
+;      (bass 170)
+;      (vocals 180)
+;      (keys 153)
+;      (real_keys 153)
+;      (band 260)
+;   )
+;   (version 30)
+;   (keys_author "FujiSkunk")
+;)
+;(timewehad
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3))
+;            (bass (4 5))
+;            (guitar (6 7))
+;            (vocals (8 9))
+;            (keys (10 11))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 220)
+;      (guitar 120)
+;      (bass 150)
+;      (vocals 140)
+;      (keys 153)
+;      (real_keys 153)
+;      (band 200)
+;   )
+;   (version 30)
+;   (keys_author "FujiSkunk")
+;)
+;(welcomehome
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3))
+;            (bass 4)
+;            (guitar (5 6))
+;            (vocals (7 8))
+;            (keys (9 10))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 310)
+;      (guitar 380)
+;      (bass 380)
+;      (vocals 280)
+;      (keys 211)
+;      (real_keys 211)
+;      (band 320)
+;   )
+;   (version 30)
+;   (keys_author "Linos Melendi")
+;)
+;(whenyouwereyoung
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3))
+;            (bass 4)
+;            (guitar (5 6))
+;            (vocals (7 8))
+;            (keys (9 10))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 335)
+;      (guitar 230)
+;      (bass 230)
+;      (vocals 210)
+;      (keys 211)
+;      (real_keys 211)
+;      (band 200)
+;   )
+;   (version 30)
+;   (keys_author "Linos Melendi")
+;)
+;(wontgetfooled
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1))
+;            (bass 2)
+;            (guitar (3 4))
+;            (vocals (5 6))
+;            (keys (7 8))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 500)
+;      (guitar 350)
+;      (bass 350)
+;      (vocals 275)
+;      (keys 450)
+;      (real_keys 450)
+;      (band 500)
+;   )
+;   (version 30)
+;   (keys_author "mazegeek")
+;)
 
 ; Rock Band 2
 (aqualung
@@ -3613,30 +3613,30 @@
    (version 30)
    (keys_author "FujiSkunk")
 )
-(jokerandthe
-   (song
-      (tracks
-         (
-            (drum (0 1 2 3))
-            (bass (4 5))
-            (guitar (6 7))
-            (vocals (8 9))
-            (keys (10 11))
-         )
-      )
-   )
-   (rank
-      (drum 230)
-      (guitar 375)
-      (bass 375)
-      (vocals 240)
-      (keys 269)
-      (real_keys 269)
-      (band 305)
-   )
-   (version 30)
-   (keys_author "FujiSkunk, Linos Melendi")
-)
+;(jokerandthe
+;   (song
+;      (tracks
+;         (
+;            (drum (0 1 2 3))
+;            (bass (4 5))
+;            (guitar (6 7))
+;            (vocals (8 9))
+;            (keys (10 11))
+;         )
+;      )
+;   )
+;   (rank
+;      (drum 230)
+;      (guitar 375)
+;      (bass 375)
+;      (vocals 240)
+;      (keys 269)
+;      (real_keys 269)
+;      (band 305)
+;   )
+;   (version 30)
+;   (keys_author "FujiSkunk, Linos Melendi")
+;)
 (justdance
    (song
       (tracks
@@ -4948,6 +4948,20 @@
       (band 292)
    )
    (keys_author "Linos Melendi & sageamagoo")
+)
+(rockawaybeach
+   (upgrade_version 1) 
+   (rank
+      (drum 170)
+      (guitar 150)
+      (bass 150)
+      (vocals 130)
+      (band 150)
+      (real_guitar 150)
+      (real_bass 150)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
 )
 (runnindownadream
    (song
