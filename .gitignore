@@ -4,6 +4,7 @@
 *.tmp
 *.ninja
 .ninja_log
+rb3_end_credits.bik
 
 #input for wii files for build
 platform/wii
