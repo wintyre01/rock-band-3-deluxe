@@ -1179,6 +1179,10 @@
 (os_icons_rb3_desc "Change the instrument icons used throughout the game")
 (os_icons_rb4 "Instrument Icons: RB4")
 (os_icons_rb4_desc "Change the instrument icons used throughout the game")
+(os_jump_to_artist_heading_on "Jump to Artist Heading: ON")
+(os_jump_to_artist_heading_off "Jump to Artist Heading: OFF")
+(os_jump_to_artist_heading_on_desc "When sorted by artist, the \qNext Heading\q shortcut will jump to the next artist")
+(os_jump_to_artist_heading_off_desc "When sorted by artist, the \qNext Heading\q shortcut will jump to the next letter")
 (os_menu_color_b "- B: %d%% +")
 (os_menu_color_g "- G: %d%% +")
 (os_menu_color_r "- R: %d%% +")
@@ -1573,6 +1577,7 @@
 
 ; RB3Enhanced
 (rb3e_default_port ":21070")
+(rb3e_failed "RB3Enhanced did not load.\n\nIf you are setting it up for the first time, you need to add RB3ELoader.xex to your DashLaunch plugins.\n\nIf it's there already, make sure Nova is enabled in Aurora. This significantly improves reliability, especially on an SSD or flash drive.")
 (rb3e_install_warn "This feature requires <it>RB3Enhanced</it> to be installed alongside RB3DX.\nVisit the website to learn more\nhttps://rb3e.rbenhanced.rocks")
 (rb3e_update_warn "This feature requires a newer build of <it>RB3Enhanced</it> than currently installed.\nPlease update to latest nightly and try again.\nhttps://rb3e.rbenhanced.rocks/nightly.html")
 (rb3e_name "RB3Enhanced")
