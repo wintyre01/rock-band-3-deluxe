@@ -30,19 +30,11 @@
    {dx_read_setting dx_admin_mode}
    {dx_read_setting_with_name selected_track_theme dx_track_theme_name}
    {dx_read_setting_with_name tracked_themes dx_tracked_track_themes}
-   {dx_read_setting dx_stored_main_menu_bg}
-   {dx_read_setting dx_default_main_menu}
-   {dx_read_setting dx_black_main_menu}
-   {dx_read_setting dx_stored_song_select_bg}
-   {dx_read_setting dx_default_song_select}
-   {dx_read_setting dx_black_song_select}
-   {dx_read_setting dx_stored_practice_bg}
-   {dx_read_setting dx_default_practice}
-   {dx_read_setting dx_black_practice}
+   {dx_read_setting dx_main_menu_background}
+   {dx_read_setting dx_song_select_background}
+   {dx_read_setting dx_practice_background}
    {dx_read_setting dx_sv8_dx_vers}
-   {dx_read_setting dx_stored_outro_vignette}
-   {dx_read_setting dx_black_song_transition}
-   {dx_read_setting dx_default_transitions}
+   {dx_read_setting dx_transition_cutscene}
    {dx_read_setting_with_name emulate_fps emulatefps}
    {dx_read_setting dx_vsync}
    {dx_read_setting_with_name track_speed trackspeed}
@@ -87,6 +79,7 @@
    {dx_read_setting dx_mtv_line_section}
    {dx_read_setting dx_mtv_line_bpm}
    {dx_read_setting dx_countdown_enabled}
+   {dx_read_setting dx_restart_shortcut}
    {dx_read_setting dx_jump_to_artist_heading}
    {dx_read_setting dx_song_select_rings}
    #ifndef RB3E
@@ -98,6 +91,7 @@
    {dx_read_setting dx_high_score_report}
    {dx_read_setting dx_hide_on_countdown}
    {dx_read_setting dx_prompt_save}
+   {dx_read_setting dx_save_auto_vocals}
    {dx_read_setting dx_enable_mv_venues}
    {dx_read_setting dx_end_song_feedback}
    {dx_read_setting dx_you_rock}
@@ -124,6 +118,7 @@
    {dx_read_setting dx_instrument_icons}
    {dx_read_setting dx_player_icons}
    {dx_read_setting dx_overshell_theme}
+   {dx_read_setting dx_slowmo}
    {if {== {elem $entry 0} {basename dx_set_postfx}}
       {dx_set_postfx {elem {find $entry dx_set_postfx} 1}}
    }

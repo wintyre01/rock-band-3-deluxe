@@ -275,6 +275,7 @@
          #ifndef HX_WII
          {if_else $dx_prompt_save os_prompt_save_on os_prompt_save_off}
          #endif
+         {if_else $dx_save_auto_vocals os_save_auto_vocals_on os_save_auto_vocals_off}
          {if_else $dx_additional_parts os_additional_parts_on os_additional_parts_off}
          ;{if_else $dx_song_delay os_songdelay_on os_songdelay_off}
          #ifndef HX_WII
@@ -290,6 +291,7 @@
       )
       (select
          (os_prompt_save {set $dx_prompt_save {! $dx_prompt_save}})
+         (os_save_auto_vocals {set $dx_save_auto_vocals {! $dx_save_auto_vocals}})
          (os_additional_parts {set $dx_additional_parts {! $dx_additional_parts}})
          (os_songdelay {set $dx_song_delay {! $dx_song_delay}})
          (os_intro_deluxe {set $dx_current_intro_movie vanilla})
@@ -388,6 +390,7 @@
          os_testsongs  ; Songs folder is removed on Wii
          #endif
          os_testfeatures
+         os_testpatterns
          #ifndef HX_WII ; no
          os_system_lag_offsets
          #endif
@@ -433,6 +436,7 @@
          (os_dumps {dx_state dxState_Dumps})
          (os_testsongs {dx_state dxState_TestSongs})
          (os_testfeatures {dx_state dxState_TestFeatures})
+         (os_testpatterns {dx_state dxState_TestPatterns})
          (os_system_lag_offsets {dx_state dxState_SystemLagOffsets})
          (os_uptime
             {dx_uptime_onscreen}
@@ -493,6 +497,35 @@
          (os_cycleaspect {dx_cycle_aspect})
       )
       (cancel {dx_state dxState_Debug})
+   )
+
+   (dxState_TestPatterns
+      (view
+         dx_test_focal
+         dx_test_colorbars
+         dx_test_brightnesscontrast
+      )
+      (message none)
+      (button
+         (kAction_Confirm
+            {dx_show_testpattern {$current_list selected_sym}}
+         )
+      )
+      (cancel
+         {with overshell
+            {if {exists testpattern.mesh}
+               {do
+                  {if $dx_need_revert_ar
+                     {rnd set_aspect kLetterboxAspect}
+                  }
+                  {delete testpattern.mesh}
+                  {delete testpattern.mat}
+                  {delete testpattern.tex}
+               }
+            }
+         }
+         {dx_state dxState_Debug}
+      )
    )
 
    (dxState_Dumps
