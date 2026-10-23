@@ -384,6 +384,9 @@
          os_milo
          #endif
          do_script
+         #ifdef RB3E
+         os_memtoggle
+         #endif
          os_logging
          os_dumps
          #ifdef RB3E
@@ -399,39 +402,16 @@
          #endif
          os_uptime
          #ifdef HX_PS3
-         {if_else {file_exists DX_HI_MEM_PATH}
-            {if_else {> {size {read_file DX_HI_MEM_PATH}} 0}
-               {if_else {== {elem {find {read_file DX_HI_MEM_PATH} dx_high_memory} 1} 190000000}
-                  os_dx_himem_on
-                  os_dx_himem_off
-               }
-               os_dx_himem_off
-            }
-            os_dx_himem_off
-         }
+         os_himem
          #endif
       )
-      #ifdef HX_PS3
-      (enter
-         {if $dx_write_hi_mem
-            {set $dx_write_hi_mem FALSE}
-            {write_file DX_HI_MEM_PATH
-               {array
-                  (
-                     (dx_high_memory 190000000)
-                     (dx_song_count 32000)
-                  )
-               }
-            }
-         }
-      )
-      #endif
       (select
          (os_debug_mode
             {set $debug_mode FALSE}
             {dx_state dxState_Advanced}
          )
          (os_milo {dx_state dxState_MiloPanels})
+         (os_memtoggle {rb3e_toggle_memory_overlay})
          (do_script
             {run DX_ACE_PATH}
          )
@@ -445,18 +425,7 @@
          (os_uptime
             {dx_uptime_onscreen}
          )
-         (os_dx_himem_off {dx_state dxState_HimemWarn})
-         (os_dx_himem_on
-            {write_file 
-               {array
-                  (
-                     (dx_high_memory 131000000)
-                     (dx_song_count 8000)
-                  )
-               }
-            }
-         )
-         
+         (os_himem {dx_state dxState_HimemMaker})
       )
       (cancel
          {dx_state dxState_Advanced}
@@ -761,6 +730,11 @@
                {set $dx_set_ui_pos_1 $dx_track_username_z}
                {set $dx_set_ui_pos_2 $dx_track_username_y}
             )
+            (vocal_phrase_pct_text
+               {set $dx_set_ui_pos_0 $dx_vocal_phrase_pct_x}
+               {set $dx_set_ui_pos_1 $dx_vocal_phrase_pct_z}
+               {set $dx_set_ui_pos_2 $dx_vocal_phrase_pct_y}
+            )
             kDataUnhandled
          }
          {if $findme
@@ -783,6 +757,7 @@
             (highway_overdrive_text {set $dx_set_ui_pos_0 0})
             (highway_streak_text {set $dx_set_ui_pos_0 2})
             (highway_username_text {set $dx_set_ui_pos_0 0})
+            (vocal_phrase_pct_text {set $dx_set_ui_pos_0 -0.2})
          }
          {switch $dx_set_ui_pos_tracked_ui
             (mtv {set $dx_set_ui_pos_1 57})
@@ -796,6 +771,7 @@
             (highway_overdrive_text {set $dx_set_ui_pos_1 -5})
             (highway_streak_text {set $dx_set_ui_pos_1 -5})
             (highway_username_text {set $dx_set_ui_pos_1 0})
+            (vocal_phrase_pct_text {set $dx_set_ui_pos_1 0})
          }
          {switch $dx_set_ui_pos_tracked_ui
             (mtv {set $dx_set_ui_pos_2 13.78})
@@ -809,6 +785,7 @@
             (highway_overdrive_text {set $dx_set_ui_pos_2 -2.5})
             (highway_streak_text {set $dx_set_ui_pos_2 -2})
             (highway_username_text {set $dx_set_ui_pos_2 -5.5})
+            (vocal_phrase_pct_text {set $dx_set_ui_pos_2 0.2})
          }
       )
 
@@ -949,6 +926,18 @@
                   }
                }
             )
+            (vocal_phrase_pct_text
+               {set $dx_vocal_phrase_pct_x $dx_set_ui_pos_0}
+               {set $dx_vocal_phrase_pct_z $dx_set_ui_pos_1}
+               {set $dx_vocal_phrase_pct_y $dx_set_ui_pos_2}
+               {if {&& {$this in_game} {! {gamemode in_mode trainer}}}
+                  {beatmatch foreach_active_player $player
+                     {if {== {$player instrument} vocals}
+                        {dx_vocal_phrase_label $dx_vocal_phrase_pct_size $dx_vocal_phrase_pct_font $dx_vocal_phrase_pct_alignment $dx_vocal_phrase_pct_kerning $dx_vocal_phrase_pct_x $dx_vocal_phrase_pct_y $dx_vocal_phrase_pct_r $dx_vocal_phrase_pct_g $dx_vocal_phrase_pct_b FALSE}
+                     }
+                  }
+               }
+            )
             kDataUnhandled
          }
          {if $findme
@@ -1044,6 +1033,7 @@
                      (highway_username_text dxState_TrackHighwayUsername)
                      (highway_overdrive_text dxState_TrackHighwayOverdrive)
                      (highway_streak_text dxState_TrackHighwayStreak)
+                     (vocal_phrase_pct_text dxState_TrackVocalPhrase)
                      dxState_MiloFind
                   }
                }
