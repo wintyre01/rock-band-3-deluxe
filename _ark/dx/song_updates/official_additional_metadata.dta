@@ -4271,14 +4271,12 @@
 ; Rock Band 4 DLC
 (bang (band_fail_cue band_fail_electro_keys.cue))
 (closingtime (vocal_tonic_note 7) (song_tonality 0))
-(fatherofall)
 (heatwaves (vocal_tonic_note 11) (song_tonality 0))
 (highwaytooblivion (song_tonality 0))
 (knightsofcydonia (vocal_tonic_note 4) (song_tonality 0))
 (lovesong (vocal_tonic_note 9))
 (pullmeunder (vocal_tonic_note 4) (song_tonality 1))
 (starlight2 (vocal_tonic_note 11) (song_tonality 0))
-(stillbreathing)
 (whatyouknow (vocal_tonic_note 6) (song_tonality 1))
 (wontstanddown (vocal_tonic_note 11) (song_tonality 1))
 
