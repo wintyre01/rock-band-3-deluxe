@@ -40,6 +40,7 @@
 (allmixedup (genre new_wave))
 (alookinginview (artist "Alice in Chains"))
 (america (album_name "Back from the Dead"))
+(asylum (name "Remnants/Asylum") (album_track_number 1))
 (backfromthedead (name "Back from the Dead") (album_name "Back from the Dead"))
 (backinblack_live (album_name "Live at Donington"))
 (badromance (genre popdanceelectronic))

@@ -1,3 +1,25 @@
+#define DX_CAL_HIDE_SLOT
+(
+   {unless {eval {var {sprint "dx_cal_shifted_" {$this get_slot_num}}}}
+      {set_var {sprint "dx_cal_shifted_" {$this get_slot_num}} TRUE}
+      {$this iterate Mesh $m {$m set_showing FALSE}}
+      {$this iterate UIList $l
+         {$l set_local_pos_index 0 {+ {$l get_local_pos_index 0} 200}}
+         {$l set_local_pos_index 2 {+ {$l get_local_pos_index 2} 250}}
+      }
+   }
+)
+#define DX_CAL_SHOW_SLOT
+(
+   {if {eval {var {sprint "dx_cal_shifted_" {$this get_slot_num}}}}
+      {set_var {sprint "dx_cal_shifted_" {$this get_slot_num}} FALSE}
+      {$this iterate Mesh $m {$m set_showing TRUE}}
+      {$this iterate UIList $l
+         {$l set_local_pos_index 0 {- {$l get_local_pos_index 0} 200}}
+         {$l set_local_pos_index 2 {- {$l get_local_pos_index 2} 250}}
+      }
+   }
+)
 #define DX_MENU_SCROLL_DESC ;used to show a description for each item on a list
 (
    {if {! {session is_in_game}}
@@ -163,7 +185,7 @@
       }
    }
    {if {&& $dx_save_auto_vocals {! $dx_dont_save_mod}}
-      {dx_modifier_dta_writer}
+      {dx_settings_dta_writer dx_modifiers}
    }
 )
 #define DX_IS_VOX_LANED
@@ -438,14 +460,14 @@
          )
          (quick ;only shows the 8 quick chat presets
             {do
-               {push_back $options {sprintf "1: %s" $dx_chat_preset_1}}
-               {push_back $options {sprintf "2: %s" $dx_chat_preset_2}}
-               {push_back $options {sprintf "3: %s" $dx_chat_preset_3}}
-               {push_back $options {sprintf "4: %s" $dx_chat_preset_4}}
-               {push_back $options {sprintf "5: %s" $dx_chat_preset_5}}
-               {push_back $options {sprintf "6: %s" $dx_chat_preset_6}}
-               {push_back $options {sprintf "7: %s" $dx_chat_preset_7}}
-               {push_back $options {sprintf "8: %s" $dx_chat_preset_8}}
+               {push_back $options {sprintf "1: %s" $dx_chat_preset1}}
+               {push_back $options {sprintf "2: %s" $dx_chat_preset2}}
+               {push_back $options {sprintf "3: %s" $dx_chat_preset3}}
+               {push_back $options {sprintf "4: %s" $dx_chat_preset4}}
+               {push_back $options {sprintf "5: %s" $dx_chat_preset5}}
+               {push_back $options {sprintf "6: %s" $dx_chat_preset6}}
+               {push_back $options {sprintf "7: %s" $dx_chat_preset7}}
+               {push_back $options {sprintf "8: %s" $dx_chat_preset8}}
             }
          )
          (FALSE ;restores vanilla online options when not in chat menu

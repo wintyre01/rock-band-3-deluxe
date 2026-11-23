@@ -90,7 +90,7 @@
       }
    )
    (dx_user_sort
-      {if {&& {!= $dx_song_select_sort_setting_1 none} {gamemode in_mode qp_coop}}
+      {if {&& {!= $dx_song_select_sort_setting_1 -1} {gamemode in_mode qp_coop}}
          {if {! $stored_sorted}
             ;sort via the stored setting, but only once
             {set $stored_sorted TRUE}
@@ -117,7 +117,7 @@
                ((g b) {set $tracked_cat pro_strings})
             }
             {if $tracked_cat
-               {if {!= {eval {var {sprint "dx_song_select_score_setting_" $tracked_cat}}} none}
+               {if {!= {eval {var {sprint "dx_song_select_score_setting_" $tracked_cat}}} -1}
                   {{music_library get view_settings_provider} refresh_all_settings}
                   {song_select_filter_panel filter_enter}
                   {{music_library get view_settings_provider} select_setting 2}
@@ -202,9 +202,6 @@
          {do
             ($song {symbol $shortname})
             ($id {{song_mgr get_meta_data $song} id})
-            {set $namevar {rb3e_get_song_name $id}}
-            {set $artistvar {rb3e_get_artist $id}}
-            {set $albumvar {rb3e_get_album $id}}
             {set $sourcevar {rb3e_get_origin $id}}
             {set $genrevar {rb3e_get_genre $id}}
             {set $subgenrevar {rb3e_get_genre $id}}
@@ -715,6 +712,26 @@
          $picked_song
       }
    )
+   (dx_endurance_pick
+      ($rolls)
+      {song.lst refresh}
+      {song.lst set_selected_simulate_scroll {random_int 0 {song.lst num_data}}}
+      {script_task kTaskSeconds
+         (delay 2)
+         (script
+            {if {== {ui current_screen} song_select_screen}
+               {cond
+                  ({> $rolls 1} {$this dx_endurance_pick {- $rolls 1}})
+                  ({== {{music_library get_highlighted_node} get_node_type} kNodeSong}
+                     {gamemode set_mode qp_coop}
+                     {music_library select_highlighted_node {input_mgr get_user}}
+                  )
+                  {$this dx_endurance_pick 1}
+               }
+            }
+         )
+      }
+   )
    (endurance_handler
       #ifdef RB3E
       {if {&& $dx_auto_endurance {! $dx_auto_endurance_overlays_set}}
@@ -733,36 +750,7 @@
                {if_else {== $dx_auto_endurance dx_random}
                   {script_task kTaskSeconds
                      (delay 2)
-                     (script
-                        {song.lst refresh}
-                        {song.lst set_selected_simulate_scroll {random_int 0 {song.lst num_data}}}
-                        {script_task kTaskSeconds
-                           (delay 2)
-                           (script
-                              {song.lst refresh}
-                              {song.lst set_selected_simulate_scroll {random_int 0 {song.lst num_data}}}
-                              {script_task kTaskSeconds
-                                 (delay 2)
-                                 (script
-                                    {song.lst refresh}
-                                    {song.lst set_selected_simulate_scroll {random_int 0 {song.lst num_data}}}
-                                    {script_task kTaskSeconds
-                                       (delay 2)
-                                       (script
-                                          {if_else {== {{music_library get_highlighted_node} get_node_type} kNodeSong}
-                                             {do
-                                                {gamemode set_mode qp_coop}
-                                                {music_library select_highlighted_node {input_mgr get_user}}
-                                             }
-                                             {$task loop}
-                                          }
-                                       )
-                                    }
-                                 )
-                              }
-                           )
-                        }
-                     )
+                     (script {$this dx_endurance_pick 3})
                   }
                   {do
                      {gamemode set_mode qp_coop}
@@ -827,7 +815,7 @@
          }
          kDataUnhandled
       }
-      {if_else {ui in_transition}
+      {if_else {|| {ui in_transition} $dx_auto_endurance}
          TRUE
          {if_else [details_mode]
             {handle_ret
@@ -841,7 +829,7 @@
    )
    (on_button_held
       ($user $raw_button $action $pad_num)
-      {if_else {ui in_transition}
+      {if_else {|| {ui in_transition} $dx_auto_endurance}
          TRUE
          {if_else [details_mode]
             {handle_ret
@@ -2492,9 +2480,14 @@
                   #ifdef HX_XBOX "png_xbox" #endif
                   #ifdef HX_WII "png_wii" #endif
                )
+               ($art {$item album_art_path})
+               {if {== {$item get_node_type} kNodeSubheader}
+                  {set $token {basename $art}}
+                  {set $token {substr $token 0 {- {strlen $token} 5}}}
+               }
                {if_else {file_exists {sprint "songs/updates/" $token "/gen/" $token "_keep." $ext}}
                   {album_art.pic set tex_file {sprint "songs/updates/" $token "/" $token "_keep.png"}}
-                  {album_art.pic set tex_file {$item album_art_path}}
+                  {album_art.pic set tex_file $art}
                }
             }
             {album_art.pic set mesh {album_art.pic get mesh}}
@@ -2883,11 +2876,7 @@
    (panels
       meta
       postsong_sfx_panel
-      #ifdef HX_WII
       sv4_panel
-      #else
-      DX_SV4_PANEL
-      #endif
       song_select_panel
       song_select_shortcut_panel
       song_select_filter_panel
